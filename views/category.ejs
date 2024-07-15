@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=categ%></title>
+  </head>
+  <body>
+    <%- include('./partials/nav') %>
+    <h1><%=upperedCat%></h1>
+
+    <ul>
+      <% menuItems.forEach(element =>{%>
+      <li>
+        name : <%=element.name%> , price : <%=element.price%> , rating :
+        <%=element.rating%> , details : <%=element.details%>
+      </li>
+      <% });%>
+    </ul>
+  </body>
+</html>
